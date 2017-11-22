@@ -1,9 +1,9 @@
 import random
 import string
 
-filename = 'sample.txt'
+filename = './Datasets/sample.txt'
 f = open(filename,'r',encoding='utf-8')
-f_new = open('noisy_sample.txt','w',encoding='utf-8')
+f_new = open('./Datasets/noisy_sample.txt','w',encoding='utf-8')
 # print(string.ascii_lowercase[:26])
 for line in f:
 	word = (line.split('\t')[0])

@@ -1,7 +1,7 @@
 import random
 import string
 for word_error in [0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5]:
-	filename = 'Bollywood_oversampled.txt'
+	filename = './Datasets/Bollywood_oversampled.txt'
 	f = open(filename,'r',encoding='utf-8')
 
 	chars = 0
@@ -21,7 +21,7 @@ for word_error in [0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5]:
 	# print("word error,av chars,char error,pi,pd,pm:",word_error,av_chars,char_error,pi,pd,pm)
 	# input("pause")
 
-	f_new = open('Noisy_bollywood.txt','w',encoding='utf-8')
+	f_new = open('./Datasets/Noisy_bollywood.txt','w',encoding='utf-8')
 
 
 	f.seek(0,0)
